@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        
+        binding.buttonPlay.setOnClickListener {
+            val intent = Intent(this@MainActivity, KotlinInvadersActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
