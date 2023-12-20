@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "466896959975",
+    "project_id": "space-invaders-7f5b9",
+    "storage_bucket": "space-invaders-7f5b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466896959975:android:5d5237c4f01737b4912542",
+        "android_client_info": {
+          "package_name": "ipca.study.spaceinvaderproj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDifblNJ3djwxP1ihkrcjSaAQhqAFUtaaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
