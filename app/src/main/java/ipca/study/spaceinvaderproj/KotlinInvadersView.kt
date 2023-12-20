@@ -1,11 +1,13 @@
 package ipca.study.spaceinvaderproj
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.*
 import android.view.SurfaceView
 import android.util.Log
 import android.view.MotionEvent
+import androidx.core.content.ContextCompat.startActivity
 
 class KotlinInvadersView(context: Context,
                          private val size: Point)
@@ -275,12 +277,10 @@ class KotlinInvadersView(context: Context,
 
         if (lost) {
             paused = true
-            lives = 3
-            score = 0
-            waves = 1
-            invaders.clear()
-            invadersBullets.clear()
-            prepareLevel()
+
+            val intent = Intent(this.context, GameOverActivity::class.java)
+            intent.putExtra("score", this.score)
+            this.context.startActivity(intent)
         }
     }
 
