@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonPlay.setOnClickListener {
-            val intent = Intent(this@MainActivity, KotlinInvadersActivity::class.java)
+            val intent = Intent(this@MainActivity, SpaceInvadersActivity::class.java)
             startActivity(intent)
         }
         binding.buttonExit.setOnClickListener {

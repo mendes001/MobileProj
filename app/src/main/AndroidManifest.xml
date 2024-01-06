@@ -22,7 +22,7 @@
             android:name=".GameOverActivity"
             android:exported="false" />
         <activity
-            android:name=".KotlinInvadersActivity"
+            android:name=".SpaceInvadersActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

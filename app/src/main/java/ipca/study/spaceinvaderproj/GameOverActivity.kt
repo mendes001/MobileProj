@@ -2,6 +2,7 @@ package ipca.study.spaceinvaderproj
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -41,10 +42,14 @@ class GameOverActivity : AppCompatActivity() {
                 }
         }
 
+       val points = findViewById<TextView>(R.id.scoreView)
+
+        points.text = "Score: ${score.toString()}"
+
 
 
         binding.buttonPlayAgain.setOnClickListener {
-            val intent = Intent(this@GameOverActivity, KotlinInvadersActivity::class.java)
+            val intent = Intent(this@GameOverActivity, SpaceInvadersActivity::class.java)
             startActivity(intent)
         }
 
