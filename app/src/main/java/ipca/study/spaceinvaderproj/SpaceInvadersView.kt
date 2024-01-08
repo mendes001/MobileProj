@@ -267,9 +267,7 @@ class SpaceInvadersView(context: Context,
         val movArea = size.y - (size.y / 8)
         when (motionEvent.action and MotionEvent.ACTION_MASK) {
 
-            MotionEvent.ACTION_POINTER_DOWN,
-            MotionEvent.ACTION_DOWN,
-            MotionEvent.ACTION_MOVE-> {
+            MotionEvent.ACTION_DOWN-> {
                 paused = false
 
                 if (motionEvent.y > movArea) {
@@ -290,7 +288,6 @@ class SpaceInvadersView(context: Context,
                 }
             }
 
-            MotionEvent.ACTION_POINTER_UP,
             MotionEvent.ACTION_UP -> {
                 if (motionEvent.y > movArea) {
                     playerShip.moving = PlayerShip.stopped
