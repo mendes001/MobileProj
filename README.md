@@ -121,6 +121,9 @@ ScoreBoard:
 
 Foi um bom desafio, pois podemos pôr em prática a matéria lecionada em aula. Achamos interessante a utilização da FireBase, que certamente irá ser útil para futuros projetos.
 
+a23490 - Tiago Mendes
+a23479 - Nuno Ribeiro
+
 
 
 
