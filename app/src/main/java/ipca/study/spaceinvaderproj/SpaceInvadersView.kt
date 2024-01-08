@@ -264,7 +264,7 @@ class SpaceInvadersView(context: Context,
     }
 
     override fun onTouchEvent(motionEvent: MotionEvent): Boolean {
-        val motionArea = size.y - (size.y / 8)
+        val movArea = size.y - (size.y / 8)
         when (motionEvent.action and MotionEvent.ACTION_MASK) {
 
             MotionEvent.ACTION_POINTER_DOWN,
@@ -272,7 +272,7 @@ class SpaceInvadersView(context: Context,
             MotionEvent.ACTION_MOVE-> {
                 paused = false
 
-                if (motionEvent.y > motionArea) {
+                if (motionEvent.y > movArea) {
                     if (motionEvent.x > size.x / 2) {
                         playerShip.moving = PlayerShip.right
                     } else {
@@ -281,7 +281,7 @@ class SpaceInvadersView(context: Context,
 
                 }
 
-                if (motionEvent.y < motionArea) {
+                if (motionEvent.y < movArea) {
 
                     playerBullet.shoot(
                         playerShip.position.left + playerShip.width / 2f,
@@ -292,7 +292,7 @@ class SpaceInvadersView(context: Context,
 
             MotionEvent.ACTION_POINTER_UP,
             MotionEvent.ACTION_UP -> {
-                if (motionEvent.y > motionArea) {
+                if (motionEvent.y > movArea) {
                     playerShip.moving = PlayerShip.stopped
                 }
             }

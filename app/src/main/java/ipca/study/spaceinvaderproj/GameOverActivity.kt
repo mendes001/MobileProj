@@ -35,7 +35,7 @@ class GameOverActivity : AppCompatActivity() {
                 .document(userEmail)
                 .set(scoreData)
                 .addOnSuccessListener { documentReference ->
-                    println("suc")
+                    println("sucess")
                 }
                 .addOnFailureListener{e ->
                     println("fail ${e.message}")
