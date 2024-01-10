@@ -43,6 +43,7 @@ class SpaceInvadersView(context: Context,
 
     private var lives = 3
 
+
     private fun prepareLevel() {
 
         Invader.numberOfInvaders = 0
@@ -98,7 +99,7 @@ class SpaceInvadersView(context: Context,
 
             if (invader.isVisible) {
 
-                invader.update(fps)
+                invader.update()
 
                 if (invader.takeAim(playerShip.position.left,
                         playerShip.width,

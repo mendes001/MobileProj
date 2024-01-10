@@ -8,7 +8,7 @@ import java.util.Random
 
 class Invader(context: Context, row: Int, column: Int, screenX: Int, screenY: Int) {
 
-    var width = screenX / 30f
+    var width = screenX / 25f
     private var height = screenY / 35f
     private val padding = screenX / 45
 
@@ -28,7 +28,7 @@ class Invader(context: Context, row: Int, column: Int, screenX: Int, screenY: In
 
     var isVisible = true
 
-    companion object {
+   companion object {
 
         lateinit var bitmap: Bitmap
 
@@ -50,7 +50,7 @@ class Invader(context: Context, row: Int, column: Int, screenX: Int, screenY: In
         numberOfInvaders ++
     }
 
-    fun update(fps: Long) {
+    fun update() {
         if (shipMoving == left) {
             position.left -= speed / 15
         }
