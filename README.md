@@ -31,7 +31,7 @@ Neste primeiro bloco podemos observar a função referente às mecânicas do jog
 ```kotlin
 override fun onTouchEvent(motionEvent: MotionEvent): Boolean {
         val movArea = size.y - (size.y / 8)
-        when (motionEvent.action and MotionEvent.ACTION_MASK) {
+        when (motionEvent.action) {
 
             MotionEvent.ACTION_DOWN-> {
                 paused = false
