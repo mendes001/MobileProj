@@ -31,7 +31,7 @@ class SpaceInvadersView(context: Context,
     private val invaders = ArrayList<Invader>()
     private var numInvaders = 0
 
-    private var playerBullet = Bullet(size.y, 1200f, 40f)
+    private var playerBullet = Bullet(size.y, 1300f, 40f)
 
     private val invadersBullets = ArrayList<Bullet>()
     private var nextBullet = 0

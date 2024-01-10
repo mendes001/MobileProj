@@ -10,7 +10,7 @@ class Invader(context: Context, row: Int, column: Int, screenX: Int, screenY: In
 
     var width = screenX / 25f
     private var height = screenY / 35f
-    private val padding = screenX / 45
+    private val padding = screenX / 70
 
     var position = RectF(
         column * (width + padding),
@@ -19,7 +19,7 @@ class Invader(context: Context, row: Int, column: Int, screenX: Int, screenY: In
         100 + row * (width + padding / 4) + height
     )
 
-    private var speed = 15f
+    private var speed = 10f
 
     private val left = 1
     private val right = 2
@@ -72,7 +72,7 @@ class Invader(context: Context, row: Int, column: Int, screenX: Int, screenY: In
         position.top += height
         position.bottom += height
 
-        speed *=  (1.1f + (waveNumber.toFloat() / 100))
+        speed *=  (1.1f + (waveNumber.toFloat() / 150))
     }
 
     fun takeAim(playerShipX: Float,
